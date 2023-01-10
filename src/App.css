@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: rgb(192, 192, 192);
+}
+.container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar a {
+  padding: 10px;
+  background-color: rgb(209, 255, 255);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.navbar a.active {
+  text-decoration: underline;
+}
+.todoContainer {
+  margin-top: 2rem;
+  border-radius: 10px;
+  width: 20rem;
+  height: 20rem;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.todoContainer input {
+  padding: 10px 20px;
+}
+.todoContainer button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.allTodo {
+  width: 80%;
+  text-align: center;
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+.btns {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.btns button {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+}
+.delete {
+  color: red;
+  transition: 0.3s;
+}
+.delete:hover {
+  opacity: 0.6;
+}
